@@ -34,9 +34,5 @@ hesaplaBtn.addEventListener("click", function(){
 })
 
 sifirlaBtn.addEventListener("click",function(){
-    sonucYaz.innerText='';
-    let baslik = document.createElement('h3');
-    sonucYaz.appendChild(baslik);
-    baslik.innerText='SONUÇ:';
-
+    sonucYaz.removeChild(sonucYaz.children[1]);
 })
